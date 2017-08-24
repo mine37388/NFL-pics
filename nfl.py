@@ -11,7 +11,7 @@ import Queue
 #Creation of class to allow multithreading for the image downloading and saving image to disk
 class NFLThread(threading.Thread):
 	def __init__(self,plist,idlist,imgpth):
-		super(NFL,self).__init__()
+		super(NFLThread,self).__init__()
 		self.plist = plist
 		self.idlist = idlist
 		self.imgpth = imgpth
@@ -32,7 +32,7 @@ class NFLThread(threading.Thread):
 				outpt.close()
 			except:
 				print "Invalid link"
-			pass
+				pass
 
 
 q = Queue.Queue()
