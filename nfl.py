@@ -109,7 +109,7 @@ home = titl.rstrip("\"")
 home = home.replace(":","")
 pth += "/" + home + "/"
 
-#
+#creation of directory on local host in directory where script is present
 try:
 	if not (os.path.exists(pth)):
 		os.mkdir(home) #creates directory for each gallery set
